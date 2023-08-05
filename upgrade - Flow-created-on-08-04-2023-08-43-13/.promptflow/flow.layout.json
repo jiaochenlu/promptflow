@@ -1,0 +1,32 @@
+{
+  "orientation": "Vertical",
+  "nodeLayouts": {
+    "inputs": {
+      "x": 232,
+      "y": 62,
+      "index": -1
+    },
+    "outputs": {
+      "x": 232,
+      "y": 392,
+      "index": -1
+    },
+    "Python_r4t5": {
+      "x": 232,
+      "y": 172,
+      "height": 75,
+      "index": 0
+    },
+    "Python_a230": {
+      "x": 232,
+      "y": 282,
+      "height": 75,
+      "index": 1
+    },
+    "Prompt_avae": {
+      "x": 12,
+      "y": 67,
+      "index": 2
+    }
+  }
+}

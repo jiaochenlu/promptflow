@@ -1,0 +1,65 @@
+inputs:
+  text:
+    type: string
+    is_chat_input: false
+  text2:
+    type: object
+    is_chat_input: false
+outputs:
+  output_prompt:
+    type: string
+    reference: ${Python_a230.output}
+    evaluation_only: false
+    is_chat_output: false
+nodes:
+- name: Python_r4t5
+  type: python
+  source:
+    type: code
+    path: Python_r4t5.py
+  inputs:
+    input1: ${inputs.text2}
+  aggregation: false
+  use_variants: false
+- name: Python_a230
+  type: python
+  source:
+    type: code
+    path: Python_a230.py
+  inputs:
+    input1: ${Python_r4t5.output}
+  aggregation: false
+  use_variants: false
+- name: Prompt_avae
+  use_variants: true
+node_variants:
+  Prompt_avae:
+    default_variant_id: variant_0
+    variants:
+      variant_0:
+        node:
+          name: Prompt_avae
+          type: prompt
+          source:
+            type: code
+            path: Prompt_avae.jinja2
+          inputs: {}
+          aggregation: false
+      variant_1:
+        node:
+          name: Prompt_avae
+          type: prompt
+          source:
+            type: code
+            path: Prompt_avae__variant_1.jinja2
+          inputs: {}
+          aggregation: false
+      variant_2:
+        node:
+          name: Prompt_avae
+          type: prompt
+          source:
+            type: code
+            path: Prompt_avae__variant_2.jinja2
+          inputs: {}
+          aggregation: false

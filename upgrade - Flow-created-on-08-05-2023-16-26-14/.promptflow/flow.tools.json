@@ -1,0 +1,74 @@
+{
+  "package": {},
+  "code": {
+    "fetch_text_content_from_url.py": {
+      "type": "python",
+      "inputs": {
+        "url": {
+          "name": "url",
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "function": "fetch_text_content_from_url",
+      "is_builtin": false
+    },
+    "summarize_text_content.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "text": {
+          "name": "text",
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Summarize webpage content into a short paragraph.",
+      "is_builtin": false
+    },
+    "prepare_examples.py": {
+      "type": "python",
+      "function": "prepare_examples",
+      "is_builtin": false
+    },
+    "classify_with_llm.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "url": {
+          "name": "url",
+          "type": [
+            "string"
+          ]
+        },
+        "examples": {
+          "name": "examples",
+          "type": [
+            "string"
+          ]
+        },
+        "text_content": {
+          "name": "text_content",
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "description": "Multi-class classification of a given url and text content.",
+      "is_builtin": false
+    },
+    "convert_to_dict.py": {
+      "type": "python",
+      "inputs": {
+        "input_str": {
+          "name": "input_str",
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "function": "convert_to_dict",
+      "is_builtin": false
+    }
+  }
+}

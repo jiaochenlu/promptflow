@@ -1,0 +1,59 @@
+{
+  "package": {},
+  "code": {
+    "Prompt_avae.jinja2": {
+      "type": "prompt",
+      "inputs": {},
+      "is_builtin": false,
+      "name": "Prompt_avae.jinja2",
+      "source": "Prompt_avae.jinja2",
+      "toolId": "Prompt_avae.jinja2"
+    },
+    "Prompt_avae__variant_1.jinja2": {
+      "type": "prompt",
+      "inputs": {},
+      "is_builtin": false,
+      "name": "Prompt_avae__variant_1.jinja2",
+      "source": "Prompt_avae__variant_1.jinja2",
+      "toolId": "Prompt_avae__variant_1.jinja2"
+    },
+    "Prompt_avae__variant_2.jinja2": {
+      "type": "prompt",
+      "inputs": {},
+      "is_builtin": false,
+      "name": "Prompt_avae__variant_2.jinja2",
+      "source": "Prompt_avae__variant_2.jinja2",
+      "toolId": "Prompt_avae__variant_2.jinja2"
+    },
+    "Python_r4t5.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "function": "my_python_tool",
+      "is_builtin": false,
+      "name": "Python_r4t5.py",
+      "source": "Python_r4t5.py",
+      "toolId": "Python_r4t5.py"
+    },
+    "Python_a230.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "object"
+          ]
+        }
+      },
+      "function": "my_python_tool",
+      "is_builtin": false,
+      "name": "Python_a230.py",
+      "source": "Python_a230.py",
+      "toolId": "Python_a230.py"
+    }
+  }
+}
